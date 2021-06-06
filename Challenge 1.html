@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Challenge 1.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css">
+</head>
+<body>
+    
+    <div class="container1">
+        <h2>Challenge 1: Your Age in Days</h2>
+    
+
+        <div class="flex-box-container-1">
+
+            <div>
+                <button class="btn btn-primary" onclick="ageInDays()">Click me</button>
+            </div>
+
+
+            <div>
+                <button class="btn btn-danger" onclick="reset()">Reset</button>
+            </div>
+
+
+        </div>
+
+        <div class="flex-box-container-1">
+            <div class="answer"></div>  
+        </div>
+    </div>
+        
+        <div class="container-2">
+            <h2>Challenge 2: Cat Generator API </h2>
+            <button class="btn btn-success" onclick="generate()">Generate Cat</button>
+            <div class="flex-box-container-1">
+                <div class="cat-list">
+                    <!-- <img src="https://acegif.com/wp-content/gifs/happy-cat-9.gif" alt="cat"> -->
+                    
+                </div>
+
+            </div>
+        </div>
+
+    
+
+    <div class="container-3">
+        <h2>Challenge 3: rock, paper, scissors</h2>
+        <div class="flex-box-rps" id="flex-box-rps-div">
+            <img id="rock" onclick="rpsGame(this)" height=150 width=150 src="https://cdn0.iconfinder.com/data/icons/rock-paper-scissors-emoji/792/rock-paper-scissors-emoji-cartoon-016-512.png" alt="rock">
+            <img id="paper" onclick="rpsGame(this)" src="https://library.kissclipart.com/20180906/vpw/kissclipart-cartoon-paper-png-clipart-paper-cartoon-clip-art-39df2b7f23b5b26c.jpg" alt="paper" height=150 width=150>
+            <img id="scissors" onclick="rpsGame(this)" src="https://img.lovepik.com/original_origin_pic/19/01/10/7656ea8e1c4ab1962ba1e9ba68e530dc.png_wh860.png" alt="scissors" height=150 width=150>
+        </div>
+    </div>
+
+
+    <div class="container-4">
+        <h2 id="change-my-color">Challenge 4: Change the Color of All Buttons</h2>
+        <div class="flex-box-pick-color">
+            <form action="">
+                <select name="backdrop" id="background" onchange="buttonColorChange(this)">
+                    <option value="random">Random</option>
+                    <option value="red">Red</option>
+                    <option value="green">Green</option>
+                    <option value="reset">reset</option>
+                </select >
+                    
+            </form> 
+
+            <button class="btn btn-primary">Wee!</button>
+            <button class="btn btn-danger">Yahoo</button>
+            <button class="btn btn-warning">Google</button>
+            <button class="btn btn-success">Facebook</button>
+
+
+
+        </div>
+    </div>
+
+
+    <div class="container-5">
+        <h2>Challenge 5: Blackjack</h2>
+
+        <h3><span id="blackjack-result">Let's play</span></h3>
+
+        <!-- span tagshi imitom vsvavt rom javaskripts sheudzlia misi shecvla
+        da igive xazze dawera mokled aadvilebs saqmes -->
+
+        <div class="flex-blackjack-row-1">
+            <div id="your-box">
+                <h2>You: <span id="your-blackjack-result">0</span></h2>
+            </div>
+
+            <div id="dealer-box">
+                <h2>Dealer: <span id="dealer-blackjack-result">0</span></h2>
+            </div>
+          
+        </div>
+
+        <div class="flex-blackjack-row-2">
+            <div>
+                <button id="blackjack-hit-button" class="btn-lg btn-primary mr-2" >Hit</button>
+                <button id="blackjack-stand-button" class="btn-lg btn-warning mr-2">Stand</button>
+                <button id="blackjack-deal-button" class="btn-lg btn-danger mr-2">Deal</button>
+            </div>
+        </div>
+        
+        <div class="flex-blackjack-row-3">
+            <table >
+                <tr>
+                    <th>Wins</th>
+                    <th>Losses</th>
+                    <th>Draws</th>
+                </tr>
+
+                <tr>
+                    <td><span id="wins">0</span></td>
+                    <td><span id="losses">0</span></td>
+                    <td><span id="draws">0</span></td>
+                </tr>
+            </table>
+        </div>
+
+    </div>
+
+
+
+
+    <script src="Challenge 1.js"></script>
+</body>
+</html>
